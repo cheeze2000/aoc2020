@@ -17,18 +17,16 @@ int f(int n) {
 
 int main() {
   ifstream file("input.txt");
-  int a = 0, i = 0;
+  long ans = 0, i = 0;
 
   string s;
   string t;
   while (file >> s >> t) {
-    if (s[i] == '#') a++;
+    if (s[i] == '#') ans++;
     i += 1;
     i %= 31;
   }
 
-  long ans = a;
   ans *= f(1) * f(3) * f(5) * f(7);
-
   cout << ans << "\n";
 }
