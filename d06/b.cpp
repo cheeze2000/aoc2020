@@ -22,7 +22,7 @@ int main() {
     n++;
   }
 
-  for (int& x : xs) {
+  for (int x : xs) {
     if (x == n) ans++;
   }
 
