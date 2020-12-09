@@ -12,12 +12,10 @@ int main() {
   while (true) {
     if (s == p) {
       long a = p, b = 0;
-      for (auto i = xs.begin(); i < xs.end(); i++) {
-        long j = *i;
-        a = min(a, j);
-        b = max(b, j);
+      for (long x : xs) {
+        a = min(a, x);
+        b = max(b, x);
       }
-
       cout << a + b << "\n";
       return 0;
     } else if (s > p) {
