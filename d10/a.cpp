@@ -14,13 +14,8 @@ int main() {
     int t = -xs.top(); xs.pop();
     int d = t - m;
 
-    if (d == 1) {
-      a++;
-    } else if (d == 2) {
-      a += 2;
-    } else {
-      b++;
-    }
+    if (d == 3) b++;
+    else a += d;
 
     m = t;
   }
